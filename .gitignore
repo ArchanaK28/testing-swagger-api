@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Tailwind CSS output (if using JIT mode with custom files)
+*.css.map
+
+# VSCode settings (if you're using VSCode and want to exclude)
+.vscode/
