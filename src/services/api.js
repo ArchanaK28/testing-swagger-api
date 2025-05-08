@@ -6,6 +6,7 @@ const API_BASE_URL =
   process.env.NODE_ENV === 'development'
     ? '/api'
     : 'http://31.220.82.50:202/api';
+console.log("API_BASE_URL:", API_BASE_URL);
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
