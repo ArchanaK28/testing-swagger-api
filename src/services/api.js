@@ -1,7 +1,11 @@
 import axios from 'axios';
 
-// const API_BASE_URL = 'http://31.220.82.50:202/api';
-const API_BASE_URL = '/api';
+//const API_BASE_URL = 'http://31.220.82.50:202/api';
+//const API_BASE_URL = '/api';
+const API_BASE_URL =
+  process.env.NODE_ENV === 'development'
+    ? '/api'
+    : 'http://31.220.82.50:202/api';
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
